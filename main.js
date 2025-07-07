@@ -1,2 +1,417 @@
-/*! For license information please see main.js.LICENSE.txt */
-(()=>{var t={172:t=>{t.exports=function(t,e){this.v=t,this.k=e},t.exports.__esModule=!0,t.exports.default=t.exports},373:t=>{t.exports=function(t){var e=Object(t),n=[];for(var r in e)n.unshift(r);return function t(){for(;n.length;)if((r=n.pop())in e)return t.value=r,t.done=!1,t;return t.done=!0,t}},t.exports.__esModule=!0,t.exports.default=t.exports},546:t=>{function e(n,r,o,a){var c=Object.defineProperty;try{c({},"",{})}catch(n){c=0}t.exports=e=function(t,n,r,o){if(n)c?c(t,n,{value:r,enumerable:!o,configurable:!o,writable:!o}):t[n]=r;else{var a=function(n,r){e(t,n,function(t){return this._invoke(n,r,t)})};a("next",0),a("throw",1),a("return",2)}},t.exports.__esModule=!0,t.exports.default=t.exports,e(n,r,o,a)}t.exports=e,t.exports.__esModule=!0,t.exports.default=t.exports},579:(t,e,n)=>{var r=n(738).default;t.exports=function(t){if(null!=t){var e=t["function"==typeof Symbol&&Symbol.iterator||"@@iterator"],n=0;if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length))return{next:function(){return t&&n>=t.length&&(t=void 0),{value:t&&t[n++],done:!t}}}}throw new TypeError(r(t)+" is not iterable")},t.exports.__esModule=!0,t.exports.default=t.exports},633:(t,e,n)=>{var r=n(172),o=n(993),a=n(869),c=n(887),i=n(791),u=n(373),s=n(579);function l(){"use strict";var e=o(),n=e.m(l),f=(Object.getPrototypeOf?Object.getPrototypeOf(n):n.__proto__).constructor;function d(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===f||"GeneratorFunction"===(e.displayName||e.name))}var p={throw:1,return:2,break:3,continue:3};function v(t){var e,n;return function(r){e||(e={stop:function(){return n(r.a,2)},catch:function(){return r.v},abrupt:function(t,e){return n(r.a,p[t],e)},delegateYield:function(t,o,a){return e.resultName=o,n(r.d,s(t),a)},finish:function(t){return n(r.f,t)}},n=function(t,n,o){r.p=e.prev,r.n=e.next;try{return t(n,o)}finally{e.next=r.n}}),e.resultName&&(e[e.resultName]=r.v,e.resultName=void 0),e.sent=r.v,e.next=r.n;try{return t.call(this,e)}finally{r.p=e.prev,r.n=e.next}}}return(t.exports=l=function(){return{wrap:function(t,n,r,o){return e.w(v(t),n,r,o&&o.reverse())},isGeneratorFunction:d,mark:e.m,awrap:function(t,e){return new r(t,e)},AsyncIterator:i,async:function(t,e,n,r,o){return(d(e)?c:a)(v(t),e,n,r,o)},keys:u,values:s}},t.exports.__esModule=!0,t.exports.default=t.exports)()}t.exports=l,t.exports.__esModule=!0,t.exports.default=t.exports},738:t=>{function e(n){return t.exports=e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},t.exports.__esModule=!0,t.exports.default=t.exports,e(n)}t.exports=e,t.exports.__esModule=!0,t.exports.default=t.exports},756:(t,e,n)=>{var r=n(633)();t.exports=r;try{regeneratorRuntime=r}catch(t){"object"==typeof globalThis?globalThis.regeneratorRuntime=r:Function("r","regeneratorRuntime = r")(r)}},791:(t,e,n)=>{var r=n(172),o=n(546);t.exports=function t(e,n){function a(t,o,c,i){try{var u=e[t](o),s=u.value;return s instanceof r?n.resolve(s.v).then(function(t){a("next",t,c,i)},function(t){a("throw",t,c,i)}):n.resolve(s).then(function(t){u.value=t,c(u)},function(t){return a("throw",t,c,i)})}catch(t){i(t)}}var c;this.next||(o(t.prototype),o(t.prototype,"function"==typeof Symbol&&Symbol.asyncIterator||"@asyncIterator",function(){return this})),o(this,"_invoke",function(t,e,r){function o(){return new n(function(e,n){a(t,r,e,n)})}return c=c?c.then(o,o):o()},!0)},t.exports.__esModule=!0,t.exports.default=t.exports},869:(t,e,n)=>{var r=n(887);t.exports=function(t,e,n,o,a){var c=r(t,e,n,o,a);return c.next().then(function(t){return t.done?t.value:c.next()})},t.exports.__esModule=!0,t.exports.default=t.exports},887:(t,e,n)=>{var r=n(993),o=n(791);t.exports=function(t,e,n,a,c){return new o(r().w(t,e,n,a),c||Promise)},t.exports.__esModule=!0,t.exports.default=t.exports},993:(t,e,n)=>{var r=n(546);function o(){var e,n,a="function"==typeof Symbol?Symbol:{},c=a.iterator||"@@iterator",i=a.toStringTag||"@@toStringTag";function u(t,o,a,c){var i=o&&o.prototype instanceof l?o:l,u=Object.create(i.prototype);return r(u,"_invoke",function(t,r,o){var a,c,i,u=0,l=o||[],f=!1,d={p:0,n:0,v:e,a:p,f:p.bind(e,4),d:function(t,n){return a=t,c=0,i=e,d.n=n,s}};function p(t,r){for(c=t,i=r,n=0;!f&&u&&!o&&n<l.length;n++){var o,a=l[n],p=d.p,v=a[2];t>3?(o=v===r)&&(i=a[(c=a[4])?5:(c=3,3)],a[4]=a[5]=e):a[0]<=p&&((o=t<2&&p<a[1])?(c=0,d.v=r,d.n=a[1]):p<v&&(o=t<3||a[0]>r||r>v)&&(a[4]=t,a[5]=r,d.n=v,c=0))}if(o||t>1)return s;throw f=!0,r}return function(o,l,v){if(u>1)throw TypeError("Generator is already running");for(f&&1===l&&p(l,v),c=l,i=v;(n=c<2?e:i)||!f;){a||(c?c<3?(c>1&&(d.n=-1),p(c,i)):d.n=i:d.v=i);try{if(u=2,a){if(c||(o="next"),n=a[o]){if(!(n=n.call(a,i)))throw TypeError("iterator result is not an object");if(!n.done)return n;i=n.value,c<2&&(c=0)}else 1===c&&(n=a.return)&&n.call(a),c<2&&(i=TypeError("The iterator does not provide a '"+o+"' method"),c=1);a=e}else if((n=(f=d.n<0)?i:t.call(r,d))!==s)break}catch(t){a=e,c=1,i=t}finally{u=1}}return{value:n,done:f}}}(t,a,c),!0),u}var s={};function l(){}function f(){}function d(){}n=Object.getPrototypeOf;var p=[][c]?n(n([][c]())):(r(n={},c,function(){return this}),n),v=d.prototype=l.prototype=Object.create(p);function m(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,d):(t.__proto__=d,r(t,i,"GeneratorFunction")),t.prototype=Object.create(v),t}return f.prototype=d,r(v,"constructor",d),r(d,"constructor",f),f.displayName="GeneratorFunction",r(d,i,"GeneratorFunction"),r(v),r(v,i,"Generator"),r(v,c,function(){return this}),r(v,"toString",function(){return"[object Generator]"}),(t.exports=o=function(){return{w:u,m}},t.exports.__esModule=!0,t.exports.default=t.exports)()}t.exports=o,t.exports.__esModule=!0,t.exports.default=t.exports}},e={};function n(r){var o=e[r];if(void 0!==o)return o.exports;var a=e[r]={exports:{}};return t[r](a,a.exports,n),a.exports}n.n=t=>{var e=t&&t.__esModule?()=>t.default:()=>t;return n.d(e,{a:e}),e},n.d=(t,e)=>{for(var r in e)n.o(e,r)&&!n.o(t,r)&&Object.defineProperty(t,r,{enumerable:!0,get:e[r]})},n.o=(t,e)=>Object.prototype.hasOwnProperty.call(t,e),(()=>{"use strict";var t=document.querySelectorAll("[data-tooltip]");function e(t){var e=function(t){var e=document.createElement("div"),n=t.getAttribute("aria-label");return e.classList.add("tooltip"),e.insertAdjacentText("afterbegin",n),document.body.appendChild(e)}(this);e.style.top="calc(".concat(t.pageY,"px - 4%)"),e.style.left="calc(".concat(t.pageX,"px + 1%)"),r.tooltip=e,o.tooltip=e,r.element=this,this.addEventListener("mouseleave",r),this.addEventListener("mousemove",o)}var r={handleEvent:function(){this.tooltip.remove(),this.removeEventListener("mouseleave",r)}},o={handleEvent:function(t){this.tooltip.style.top="calc(".concat(t.pageY,"px - 4%)"),this.tooltip.style.left="calc(".concat(t.pageX,"px + 1%)")}};function a(t,e,n){var r=document.documentElement,o="data-outside";t.hasAttribute(o)||e.forEach(function(a){function c(a){t.contains(a.target)||(t.removeAttribute(o),e.forEach(function(t){r.removeEventListener(t,c)}),n())}setTimeout(function(){r.addEventListener(a,c)}),t.setAttribute(o,"")})}function c(t,e,n,r,o,a,c){try{var i=t[a](c),u=i.value}catch(t){return void n(t)}i.done?e(u):Promise.resolve(u).then(r,o)}t.forEach(function(t){t.addEventListener("mouseover",e)});var i,u,s,l,f,d,p,v,m,h,y,x=n(756),b=n.n(x);function g(){var t=document.querySelectorAll("[data-numero]"),e=document.querySelector(".numeros"),n=new MutationObserver(function(e){e[0].target.classList.contains("active")&&(n.disconnect(),t.forEach(function(t){var e=Number(t.innerText),n=Math.floor(e/80),r=0,o=setInterval(function(){r+=n,t.innerText=r,r>=e&&(t.innerText=e,clearInterval(o))},45*Math.random())}))});n.observe(e,{attributes:!0})}function _(){var t;return t=b().mark(function t(e){var n,r,o,a;return b().wrap(function(t){for(;;)switch(t.prev=t.next){case 0:return t.prev=0,t.next=1,fetch(e);case 1:return n=t.sent,t.next=2,n.json();case 2:r=t.sent,o=document.querySelector(".numeros-grid"),r.forEach(function(t){var e,n,r=(e=t,(n=document.createElement("div")).classList.add("animais-numeros"),n.innerHTML="<h3>".concat(e.especie,"</h3><span data-numero>").concat(e.total,"</span>"),n);o.appendChild(r)}),g(),t.next=4;break;case 3:t.prev=3,a=t.catch(0),console.log(a);case 4:case"end":return t.stop()}},t,null,[[0,3]])}),_=function(){var e=this,n=arguments;return new Promise(function(r,o){var a=t.apply(e,n);function i(t){c(a,r,o,i,u,"next",t)}function u(t){c(a,r,o,i,u,"throw",t)}i(void 0)})},_.apply(this,arguments)}m=document.querySelectorAll("[data-tab='menu'] li"),h=document.querySelectorAll("[data-tab='content'] section"),y="active",m.length&&h.length&&(h[0].classList.add(y),m.forEach(function(t,e){t.addEventListener("click",function(){!function(t,e){h.forEach(function(t){t.classList.remove(e)});var n=h[t].dataset.anime;console.log(n),h[t].classList.add(e,n)}(e,y)})})),function(){var t=document.querySelectorAll("[data-anime='accordion'] dt"),e="active";function n(t){t.currentTarget.classList.toggle(e),t.currentTarget.nextElementSibling.classList.toggle(e)}t.length&&(t[0].classList.add("ativo"),t[0].nextElementSibling.classList.add("ativo")),t.forEach(function(t){t.addEventListener("click",n)})}(),i=document.querySelectorAll("[data-menu='suave'] a[href^='#']"),u=function(t){t.preventDefault();var e=t.currentTarget.getAttribute("href");document.querySelector(e).scrollIntoView({behavior:"smooth",block:"start"})},i.forEach(function(t){t.addEventListener("click",u)}),function(){var t=document.querySelectorAll("[data-anime='scroll']");if(t.length){var e=.6*window.innerHeight,n=function(){t.forEach(function(t){t.getBoundingClientRect().top-e<0?t.classList.add("active"):t.classList.contains("active")&&t.classList.remove("active")})};n(),window.addEventListener("scroll",n)}}(),function(){var t=this,e=document.querySelector("[data-modal='open']"),n=document.querySelector("[data-modal='container']"),r=document.querySelector("[data-modal='close']"),o=function(t){return t.preventDefault(),n.classList.toggle("active")};e.addEventListener("click",o),r.addEventListener("click",o),n.addEventListener("click",function(e){e.target===t&&o(e)})}(),function(){function t(t){var e=this;t.preventDefault(),console.log(t),this.classList.add("active"),a(this,["touchstart","click"],function(){e.classList.remove("active")})}document.querySelectorAll("[data-dropdown]").forEach(function(e){["touchstart","click"].forEach(function(n){e.addEventListener(n,t)})})}(),function(){var t=document.querySelector("[data-menu='button']"),e=document.querySelector("[data-menu='list']"),n=["click","touchstart"];function r(){e.classList.add("active"),t.classList.add("active"),a(e,n,function(){e.classList.remove("active"),t.classList.remove("active")})}n.forEach(function(e){t.addEventListener(e,r)})}(),l=(s=document.querySelector("[data-semana]")).dataset.semana.split(",").map(Number),f=s.dataset.horario.split(",").map(Number),d=(new Date).getDay(),p=-1!==l.indexOf(d),v=d>=f[0]||d<f[1],p&&v&&s.classList.add("openned"),function(){_.apply(this,arguments)}("./animaisapi.json"),function(){try{fetch("https://blockchain.info/ticker").then(function(t){t.json()}).then(function(t){return document.querySelector(".btc-preco").innerText=(200/t.BRL.sell).toFixed(6)})}catch(t){console.log(t)}}()})()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./node_modules/@babel/runtime/helpers/OverloadYield.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/OverloadYield.js ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+eval("function _OverloadYield(e, d) {\n  this.v = e, this.k = d;\n}\nmodule.exports = _OverloadYield, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/OverloadYield.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _asyncToGenerator)\n/* harmony export */ });\nfunction asyncGeneratorStep(n, t, e, r, o, a, c) {\n  try {\n    var i = n[a](c),\n      u = i.value;\n  } catch (n) {\n    return void e(n);\n  }\n  i.done ? t(u) : Promise.resolve(u).then(r, o);\n}\nfunction _asyncToGenerator(n) {\n  return function () {\n    var t = this,\n      e = arguments;\n    return new Promise(function (r, o) {\n      var a = n.apply(t, e);\n      function _next(n) {\n        asyncGeneratorStep(a, r, o, _next, _throw, \"next\", n);\n      }\n      function _throw(n) {\n        asyncGeneratorStep(a, r, o, _next, _throw, \"throw\", n);\n      }\n      _next(void 0);\n    });\n  };\n}\n\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/classCallCheck.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _classCallCheck)\n/* harmony export */ });\nfunction _classCallCheck(a, n) {\n  if (!(a instanceof n)) throw new TypeError(\"Cannot call a class as a function\");\n}\n\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/esm/classCallCheck.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/createClass.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/createClass.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _createClass)\n/* harmony export */ });\n/* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./toPropertyKey.js */ \"./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js\");\n\nfunction _defineProperties(e, r) {\n  for (var t = 0; t < r.length; t++) {\n    var o = r[t];\n    o.enumerable = o.enumerable || !1, o.configurable = !0, \"value\" in o && (o.writable = !0), Object.defineProperty(e, (0,_toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(o.key), o);\n  }\n}\nfunction _createClass(e, r, t) {\n  return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, \"prototype\", {\n    writable: !1\n  }), e;\n}\n\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/esm/createClass.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/toPrimitive.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toPrimitive.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ toPrimitive)\n/* harmony export */ });\n/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ \"./node_modules/@babel/runtime/helpers/esm/typeof.js\");\n\nfunction toPrimitive(t, r) {\n  if (\"object\" != (0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(t) || !t) return t;\n  var e = t[Symbol.toPrimitive];\n  if (void 0 !== e) {\n    var i = e.call(t, r || \"default\");\n    if (\"object\" != (0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(i)) return i;\n    throw new TypeError(\"@@toPrimitive must return a primitive value.\");\n  }\n  return (\"string\" === r ? String : Number)(t);\n}\n\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/esm/toPrimitive.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ toPropertyKey)\n/* harmony export */ });\n/* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ \"./node_modules/@babel/runtime/helpers/esm/typeof.js\");\n/* harmony import */ var _toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toPrimitive.js */ \"./node_modules/@babel/runtime/helpers/esm/toPrimitive.js\");\n\n\nfunction toPropertyKey(t) {\n  var i = (0,_toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(t, \"string\");\n  return \"symbol\" == (0,_typeof_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(i) ? i : i + \"\";\n}\n\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/typeof.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ _typeof)\n/* harmony export */ });\nfunction _typeof(o) {\n  \"@babel/helpers - typeof\";\n\n  return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) {\n    return typeof o;\n  } : function (o) {\n    return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o;\n  }, _typeof(o);\n}\n\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/esm/typeof.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regenerator.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regenerator.js ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var regeneratorDefine = __webpack_require__(/*! ./regeneratorDefine.js */ \"./node_modules/@babel/runtime/helpers/regeneratorDefine.js\");\nfunction _regenerator() {\n  /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */\n  var e,\n    t,\n    r = \"function\" == typeof Symbol ? Symbol : {},\n    n = r.iterator || \"@@iterator\",\n    o = r.toStringTag || \"@@toStringTag\";\n  function i(r, n, o, i) {\n    var c = n && n.prototype instanceof Generator ? n : Generator,\n      u = Object.create(c.prototype);\n    return regeneratorDefine(u, \"_invoke\", function (r, n, o) {\n      var i,\n        c,\n        u,\n        f = 0,\n        p = o || [],\n        y = !1,\n        G = {\n          p: 0,\n          n: 0,\n          v: e,\n          a: d,\n          f: d.bind(e, 4),\n          d: function d(t, r) {\n            return i = t, c = 0, u = e, G.n = r, a;\n          }\n        };\n      function d(r, n) {\n        for (c = r, u = n, t = 0; !y && f && !o && t < p.length; t++) {\n          var o,\n            i = p[t],\n            d = G.p,\n            l = i[2];\n          r > 3 ? (o = l === n) && (u = i[(c = i[4]) ? 5 : (c = 3, 3)], i[4] = i[5] = e) : i[0] <= d && ((o = r < 2 && d < i[1]) ? (c = 0, G.v = n, G.n = i[1]) : d < l && (o = r < 3 || i[0] > n || n > l) && (i[4] = r, i[5] = n, G.n = l, c = 0));\n        }\n        if (o || r > 1) return a;\n        throw y = !0, n;\n      }\n      return function (o, p, l) {\n        if (f > 1) throw TypeError(\"Generator is already running\");\n        for (y && 1 === p && d(p, l), c = p, u = l; (t = c < 2 ? e : u) || !y;) {\n          i || (c ? c < 3 ? (c > 1 && (G.n = -1), d(c, u)) : G.n = u : G.v = u);\n          try {\n            if (f = 2, i) {\n              if (c || (o = \"next\"), t = i[o]) {\n                if (!(t = t.call(i, u))) throw TypeError(\"iterator result is not an object\");\n                if (!t.done) return t;\n                u = t.value, c < 2 && (c = 0);\n              } else 1 === c && (t = i[\"return\"]) && t.call(i), c < 2 && (u = TypeError(\"The iterator does not provide a '\" + o + \"' method\"), c = 1);\n              i = e;\n            } else if ((t = (y = G.n < 0) ? u : r.call(n, G)) !== a) break;\n          } catch (t) {\n            i = e, c = 1, u = t;\n          } finally {\n            f = 1;\n          }\n        }\n        return {\n          value: t,\n          done: y\n        };\n      };\n    }(r, o, i), !0), u;\n  }\n  var a = {};\n  function Generator() {}\n  function GeneratorFunction() {}\n  function GeneratorFunctionPrototype() {}\n  t = Object.getPrototypeOf;\n  var c = [][n] ? t(t([][n]())) : (regeneratorDefine(t = {}, n, function () {\n      return this;\n    }), t),\n    u = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(c);\n  function f(e) {\n    return Object.setPrototypeOf ? Object.setPrototypeOf(e, GeneratorFunctionPrototype) : (e.__proto__ = GeneratorFunctionPrototype, regeneratorDefine(e, o, \"GeneratorFunction\")), e.prototype = Object.create(u), e;\n  }\n  return GeneratorFunction.prototype = GeneratorFunctionPrototype, regeneratorDefine(u, \"constructor\", GeneratorFunctionPrototype), regeneratorDefine(GeneratorFunctionPrototype, \"constructor\", GeneratorFunction), GeneratorFunction.displayName = \"GeneratorFunction\", regeneratorDefine(GeneratorFunctionPrototype, o, \"GeneratorFunction\"), regeneratorDefine(u), regeneratorDefine(u, o, \"Generator\"), regeneratorDefine(u, n, function () {\n    return this;\n  }), regeneratorDefine(u, \"toString\", function () {\n    return \"[object Generator]\";\n  }), (module.exports = _regenerator = function _regenerator() {\n    return {\n      w: i,\n      m: f\n    };\n  }, module.exports.__esModule = true, module.exports[\"default\"] = module.exports)();\n}\nmodule.exports = _regenerator, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/regenerator.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regeneratorAsync.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorAsync.js ***!
+  \*****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var regeneratorAsyncGen = __webpack_require__(/*! ./regeneratorAsyncGen.js */ \"./node_modules/@babel/runtime/helpers/regeneratorAsyncGen.js\");\nfunction _regeneratorAsync(n, e, r, t, o) {\n  var a = regeneratorAsyncGen(n, e, r, t, o);\n  return a.next().then(function (n) {\n    return n.done ? n.value : a.next();\n  });\n}\nmodule.exports = _regeneratorAsync, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/regeneratorAsync.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regeneratorAsyncGen.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorAsyncGen.js ***!
+  \********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var regenerator = __webpack_require__(/*! ./regenerator.js */ \"./node_modules/@babel/runtime/helpers/regenerator.js\");\nvar regeneratorAsyncIterator = __webpack_require__(/*! ./regeneratorAsyncIterator.js */ \"./node_modules/@babel/runtime/helpers/regeneratorAsyncIterator.js\");\nfunction _regeneratorAsyncGen(r, e, t, o, n) {\n  return new regeneratorAsyncIterator(regenerator().w(r, e, t, o), n || Promise);\n}\nmodule.exports = _regeneratorAsyncGen, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/regeneratorAsyncGen.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regeneratorAsyncIterator.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorAsyncIterator.js ***!
+  \*************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var OverloadYield = __webpack_require__(/*! ./OverloadYield.js */ \"./node_modules/@babel/runtime/helpers/OverloadYield.js\");\nvar regeneratorDefine = __webpack_require__(/*! ./regeneratorDefine.js */ \"./node_modules/@babel/runtime/helpers/regeneratorDefine.js\");\nfunction AsyncIterator(t, e) {\n  function n(r, o, i, f) {\n    try {\n      var c = t[r](o),\n        u = c.value;\n      return u instanceof OverloadYield ? e.resolve(u.v).then(function (t) {\n        n(\"next\", t, i, f);\n      }, function (t) {\n        n(\"throw\", t, i, f);\n      }) : e.resolve(u).then(function (t) {\n        c.value = t, i(c);\n      }, function (t) {\n        return n(\"throw\", t, i, f);\n      });\n    } catch (t) {\n      f(t);\n    }\n  }\n  var r;\n  this.next || (regeneratorDefine(AsyncIterator.prototype), regeneratorDefine(AsyncIterator.prototype, \"function\" == typeof Symbol && Symbol.asyncIterator || \"@asyncIterator\", function () {\n    return this;\n  })), regeneratorDefine(this, \"_invoke\", function (t, o, i) {\n    function f() {\n      return new e(function (e, r) {\n        n(t, i, e, r);\n      });\n    }\n    return r = r ? r.then(f, f) : f();\n  }, !0);\n}\nmodule.exports = AsyncIterator, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/regeneratorAsyncIterator.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regeneratorDefine.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorDefine.js ***!
+  \******************************************************************/
+/***/ ((module) => {
+
+eval("function _regeneratorDefine(e, r, n, t) {\n  var i = Object.defineProperty;\n  try {\n    i({}, \"\", {});\n  } catch (e) {\n    i = 0;\n  }\n  module.exports = _regeneratorDefine = function regeneratorDefine(e, r, n, t) {\n    if (r) i ? i(e, r, {\n      value: n,\n      enumerable: !t,\n      configurable: !t,\n      writable: !t\n    }) : e[r] = n;else {\n      var o = function o(r, n) {\n        _regeneratorDefine(e, r, function (e) {\n          return this._invoke(r, n, e);\n        });\n      };\n      o(\"next\", 0), o(\"throw\", 1), o(\"return\", 2);\n    }\n  }, module.exports.__esModule = true, module.exports[\"default\"] = module.exports, _regeneratorDefine(e, r, n, t);\n}\nmodule.exports = _regeneratorDefine, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/regeneratorDefine.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regeneratorKeys.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorKeys.js ***!
+  \****************************************************************/
+/***/ ((module) => {
+
+eval("function _regeneratorKeys(e) {\n  var n = Object(e),\n    r = [];\n  for (var t in n) r.unshift(t);\n  return function e() {\n    for (; r.length;) if ((t = r.pop()) in n) return e.value = t, e.done = !1, e;\n    return e.done = !0, e;\n  };\n}\nmodule.exports = _regeneratorKeys, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/regeneratorKeys.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regeneratorRuntime.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
+  \*******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var OverloadYield = __webpack_require__(/*! ./OverloadYield.js */ \"./node_modules/@babel/runtime/helpers/OverloadYield.js\");\nvar regenerator = __webpack_require__(/*! ./regenerator.js */ \"./node_modules/@babel/runtime/helpers/regenerator.js\");\nvar regeneratorAsync = __webpack_require__(/*! ./regeneratorAsync.js */ \"./node_modules/@babel/runtime/helpers/regeneratorAsync.js\");\nvar regeneratorAsyncGen = __webpack_require__(/*! ./regeneratorAsyncGen.js */ \"./node_modules/@babel/runtime/helpers/regeneratorAsyncGen.js\");\nvar regeneratorAsyncIterator = __webpack_require__(/*! ./regeneratorAsyncIterator.js */ \"./node_modules/@babel/runtime/helpers/regeneratorAsyncIterator.js\");\nvar regeneratorKeys = __webpack_require__(/*! ./regeneratorKeys.js */ \"./node_modules/@babel/runtime/helpers/regeneratorKeys.js\");\nvar regeneratorValues = __webpack_require__(/*! ./regeneratorValues.js */ \"./node_modules/@babel/runtime/helpers/regeneratorValues.js\");\nfunction _regeneratorRuntime() {\n  \"use strict\";\n\n  var r = regenerator(),\n    e = r.m(_regeneratorRuntime),\n    t = (Object.getPrototypeOf ? Object.getPrototypeOf(e) : e.__proto__).constructor;\n  function n(r) {\n    var e = \"function\" == typeof r && r.constructor;\n    return !!e && (e === t || \"GeneratorFunction\" === (e.displayName || e.name));\n  }\n  var o = {\n    \"throw\": 1,\n    \"return\": 2,\n    \"break\": 3,\n    \"continue\": 3\n  };\n  function a(r) {\n    var e, t;\n    return function (n) {\n      e || (e = {\n        stop: function stop() {\n          return t(n.a, 2);\n        },\n        \"catch\": function _catch() {\n          return n.v;\n        },\n        abrupt: function abrupt(r, e) {\n          return t(n.a, o[r], e);\n        },\n        delegateYield: function delegateYield(r, o, a) {\n          return e.resultName = o, t(n.d, regeneratorValues(r), a);\n        },\n        finish: function finish(r) {\n          return t(n.f, r);\n        }\n      }, t = function t(r, _t, o) {\n        n.p = e.prev, n.n = e.next;\n        try {\n          return r(_t, o);\n        } finally {\n          e.next = n.n;\n        }\n      }), e.resultName && (e[e.resultName] = n.v, e.resultName = void 0), e.sent = n.v, e.next = n.n;\n      try {\n        return r.call(this, e);\n      } finally {\n        n.p = e.prev, n.n = e.next;\n      }\n    };\n  }\n  return (module.exports = _regeneratorRuntime = function _regeneratorRuntime() {\n    return {\n      wrap: function wrap(e, t, n, o) {\n        return r.w(a(e), t, n, o && o.reverse());\n      },\n      isGeneratorFunction: n,\n      mark: r.m,\n      awrap: function awrap(r, e) {\n        return new OverloadYield(r, e);\n      },\n      AsyncIterator: regeneratorAsyncIterator,\n      async: function async(r, e, t, o, u) {\n        return (n(e) ? regeneratorAsyncGen : regeneratorAsync)(a(r), e, t, o, u);\n      },\n      keys: regeneratorKeys,\n      values: regeneratorValues\n    };\n  }, module.exports.__esModule = true, module.exports[\"default\"] = module.exports)();\n}\nmodule.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/regeneratorRuntime.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/regeneratorValues.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorValues.js ***!
+  \******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var _typeof = (__webpack_require__(/*! ./typeof.js */ \"./node_modules/@babel/runtime/helpers/typeof.js\")[\"default\"]);\nfunction _regeneratorValues(e) {\n  if (null != e) {\n    var t = e[\"function\" == typeof Symbol && Symbol.iterator || \"@@iterator\"],\n      r = 0;\n    if (t) return t.call(e);\n    if (\"function\" == typeof e.next) return e;\n    if (!isNaN(e.length)) return {\n      next: function next() {\n        return e && r >= e.length && (e = void 0), {\n          value: e && e[r++],\n          done: !e\n        };\n      }\n    };\n  }\n  throw new TypeError(_typeof(e) + \" is not iterable\");\n}\nmodule.exports = _regeneratorValues, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/regeneratorValues.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/typeof.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
+  \*******************************************************/
+/***/ ((module) => {
+
+eval("function _typeof(o) {\n  \"@babel/helpers - typeof\";\n\n  return module.exports = _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (o) {\n    return typeof o;\n  } : function (o) {\n    return o && \"function\" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? \"symbol\" : typeof o;\n  }, module.exports.__esModule = true, module.exports[\"default\"] = module.exports, _typeof(o);\n}\nmodule.exports = _typeof, module.exports.__esModule = true, module.exports[\"default\"] = module.exports;\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/helpers/typeof.js?");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("// TODO(Babel 8): Remove this file.\n\nvar runtime = __webpack_require__(/*! ../helpers/regeneratorRuntime */ \"./node_modules/@babel/runtime/helpers/regeneratorRuntime.js\")();\nmodule.exports = runtime;\n\n// Copied from https://github.com/facebook/regenerator/blob/main/packages/runtime/runtime.js#L736=\ntry {\n  regeneratorRuntime = runtime;\n} catch (accidentalStrictMode) {\n  if (typeof globalThis === \"object\") {\n    globalThis.regeneratorRuntime = runtime;\n  } else {\n    Function(\"r\", \"regeneratorRuntime = r\")(runtime);\n  }\n}\n\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./node_modules/@babel/runtime/regenerator/index.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_init_tab_navigation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/init-tab-navigation.js */ \"./src/modules/init-tab-navigation.js\");\n/* harmony import */ var _modules_init_smooth_scroll_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/init-smooth-scroll.js */ \"./src/modules/init-smooth-scroll.js\");\n/* harmony import */ var _modules_init_animate_scroll_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/init-animate-scroll.js */ \"./src/modules/init-animate-scroll.js\");\n/* harmony import */ var _modules_init_accordion_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/init-accordion.js */ \"./src/modules/init-accordion.js\");\n/* harmony import */ var _modules_init_modal_handler_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/init-modal-handler.js */ \"./src/modules/init-modal-handler.js\");\n/* harmony import */ var _modules_init_tooltip_handler_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/init-tooltip-handler.js */ \"./src/modules/init-tooltip-handler.js\");\n/* harmony import */ var _modules_init_dropdown_menu_handler_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/init-dropdown-menu-handler.js */ \"./src/modules/init-dropdown-menu-handler.js\");\n/* harmony import */ var _modules_init_menu_mobile_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/init-menu-mobile.js */ \"./src/modules/init-menu-mobile.js\");\n/* harmony import */ var _modules_init_operation_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/init-operation.js */ \"./src/modules/init-operation.js\");\n/* harmony import */ var _modules_init_fetch_animais_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/init-fetch-animais.js */ \"./src/modules/init-fetch-animais.js\");\n/* harmony import */ var _modules_init_fetch_bitcoin_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./modules/init-fetch-bitcoin.js */ \"./src/modules/init-fetch-bitcoin.js\");\n\n\n\n\n\n\n\n\n\n\n\n(0,_modules_init_tab_navigation_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_modules_init_accordion_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\nvar smoothScroll = new _modules_init_smooth_scroll_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"](\"[data-menu='suave'] a[href^='#']\");\n(0,_modules_init_animate_scroll_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n(0,_modules_init_modal_handler_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n(0,_modules_init_tooltip_handler_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"])();\n(0,_modules_init_dropdown_menu_handler_js__WEBPACK_IMPORTED_MODULE_6__[\"default\"])();\n(0,_modules_init_menu_mobile_js__WEBPACK_IMPORTED_MODULE_7__[\"default\"])();\n(0,_modules_init_operation_js__WEBPACK_IMPORTED_MODULE_8__[\"default\"])();\n(0,_modules_init_fetch_animais_js__WEBPACK_IMPORTED_MODULE_9__[\"default\"])();\n(0,_modules_init_fetch_bitcoin_js__WEBPACK_IMPORTED_MODULE_10__[\"default\"])();\nsmoothScroll.init();\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-accordion.js":
+/*!***************************************!*\
+  !*** ./src/modules/init-accordion.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initAccordion)\n/* harmony export */ });\nfunction initAccordion() {\n  var accordionList = document.querySelectorAll(\"[data-anime='accordion'] dt\");\n  var accordionClassToInit = \"active\";\n  function activeAccordion(event) {\n    event.currentTarget.classList.toggle(accordionClassToInit);\n    event.currentTarget.nextElementSibling.classList.toggle(accordionClassToInit);\n    console.log(event.currentTarget);\n  }\n  accordionList.forEach(function (item) {\n    item.addEventListener(\"click\", activeAccordion);\n  });\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-accordion.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-animate-scroll.js":
+/*!********************************************!*\
+  !*** ./src/modules/init-animate-scroll.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initAnimateScroll)\n/* harmony export */ });\nfunction initAnimateScroll() {\n  var sections = document.querySelectorAll(\"[data-anime='scroll']\");\n  if (sections.length) {\n    var halfWindow = window.innerHeight * 0.6;\n    var animateScroll = function animateScroll() {\n      sections.forEach(function (section) {\n        var sectionTop = section.getBoundingClientRect().top;\n        var isSectionVisible = sectionTop - halfWindow < 0;\n        if (isSectionVisible) section.classList.add(\"active\");else if (section.classList.contains(\"active\")) section.classList.remove(\"active\");\n      });\n    };\n    animateScroll();\n    window.addEventListener(\"scroll\", animateScroll);\n  }\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-animate-scroll.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-dropdown-menu-handler.js":
+/*!***************************************************!*\
+  !*** ./src/modules/init-dropdown-menu-handler.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initDropdownMenu)\n/* harmony export */ });\n/* harmony import */ var _init_outside_click_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./init-outside-click.js */ \"./src/modules/init-outside-click.js\");\n\nfunction initDropdownMenu() {\n  var dropdownMenu = document.querySelectorAll(\"[data-dropdown]\");\n  dropdownMenu.forEach(function (menu) {\n    [\"touchstart\", \"click\"].forEach(function (userEvent) {\n      menu.addEventListener(userEvent, handleClick);\n    });\n  });\n  function handleClick(event) {\n    var _this = this;\n    event.preventDefault();\n    console.log(event);\n    this.classList.add(\"active\");\n    (0,_init_outside_click_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(this, [\"touchstart\", \"click\"], function () {\n      _this.classList.remove(\"active\");\n    });\n  }\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-dropdown-menu-handler.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-fetch-animais.js":
+/*!*******************************************!*\
+  !*** ./src/modules/init-fetch-animais.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initFetchAnimais)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _init_number_animation_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./init-number-animation.js */ \"./src/modules/init-number-animation.js\");\n\n\n\nfunction initFetchAnimais() {\n  return fetchAnimais(\"./animaisapi.json\");\n}\nfunction fetchAnimais(_x) {\n  return _fetchAnimais.apply(this, arguments);\n}\nfunction _fetchAnimais() {\n  _fetchAnimais = (0,_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(/*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee(url) {\n    var data, jsonData, containerNumber, _t;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().wrap(function (_context) {\n      while (1) switch (_context.prev = _context.next) {\n        case 0:\n          _context.prev = 0;\n          _context.next = 1;\n          return fetch(url);\n        case 1:\n          data = _context.sent;\n          _context.next = 2;\n          return data.json();\n        case 2:\n          jsonData = _context.sent;\n          containerNumber = document.querySelector(\".numeros-grid\");\n          jsonData.forEach(function (element) {\n            var divAnimal = createAnimal(element);\n            containerNumber.appendChild(divAnimal);\n          });\n          (0,_init_number_animation_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n          _context.next = 4;\n          break;\n        case 3:\n          _context.prev = 3;\n          _t = _context[\"catch\"](0);\n          console.log(_t);\n        case 4:\n        case \"end\":\n          return _context.stop();\n      }\n    }, _callee, null, [[0, 3]]);\n  }));\n  return _fetchAnimais.apply(this, arguments);\n}\nfunction createAnimal(animal) {\n  var div = document.createElement(\"div\");\n  div.classList.add(\"animais-numeros\");\n  div.innerHTML = \"<h3>\".concat(animal.especie, \"</h3><span data-numero>\").concat(animal.total, \"</span>\");\n  return div;\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-fetch-animais.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-fetch-bitcoin.js":
+/*!*******************************************!*\
+  !*** ./src/modules/init-fetch-bitcoin.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initFetchBitcoin)\n/* harmony export */ });\nfunction initFetchBitcoin() {\n  try {\n    fetch(\"https://blockchain.info/ticker\").then(function (r) {\n      return r.json();\n    }).then(function (bitcoin) {\n      var btc = document.querySelector(\".btc-preco\");\n      return btc.innerText = (200 / bitcoin.BRL.sell).toFixed(6);\n    });\n  } catch (error) {\n    console.log(error);\n  }\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-fetch-bitcoin.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-menu-mobile.js":
+/*!*****************************************!*\
+  !*** ./src/modules/init-menu-mobile.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initMenuMobile)\n/* harmony export */ });\n/* harmony import */ var _init_outside_click_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./init-outside-click.js */ \"./src/modules/init-outside-click.js\");\n\nfunction initMenuMobile() {\n  var menuButton = document.querySelector(\"[data-menu='button']\");\n  var menuList = document.querySelector(\"[data-menu='list']\");\n  var events = [\"click\", \"touchstart\"];\n  function openMenu(event) {\n    menuList.classList.add(\"active\");\n    menuButton.classList.add(\"active\");\n    (0,_init_outside_click_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(menuList, events, function () {\n      menuList.classList.remove(\"active\");\n      menuButton.classList.remove(\"active\");\n    });\n  }\n  events.forEach(function (userEvent) {\n    menuButton.addEventListener(userEvent, openMenu);\n  });\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-menu-mobile.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-modal-handler.js":
+/*!*******************************************!*\
+  !*** ./src/modules/init-modal-handler.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initModal)\n/* harmony export */ });\nfunction initModal() {\n  var _this = this;\n  var buttonAnchor = document.querySelector(\"[data-modal='open']\");\n  var modalContainer = document.querySelector(\"[data-modal='container']\");\n  var modalButtonClose = document.querySelector(\"[data-modal='close']\");\n  var toggleModal = function toggleModal(event) {\n    event.preventDefault();\n    return modalContainer.classList.toggle(\"active\");\n  };\n  var handleClickOutModal = function handleClickOutModal(event) {\n    if (event.target === _this) toggleModal(event);\n  };\n  buttonAnchor.addEventListener(\"click\", toggleModal);\n  modalButtonClose.addEventListener(\"click\", toggleModal);\n  modalContainer.addEventListener(\"click\", handleClickOutModal);\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-modal-handler.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-number-animation.js":
+/*!**********************************************!*\
+  !*** ./src/modules/init-number-animation.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initNumberAnimation)\n/* harmony export */ });\nfunction initNumberAnimation() {\n  var numeros = document.querySelectorAll(\"[data-numero]\");\n  function animateNumbers() {\n    numeros.forEach(function (numero) {\n      var total = Number(numero.innerText);\n      var incremento = Math.floor(total / 80);\n      var start = 0;\n      var timer = setInterval(function () {\n        start = start + incremento;\n        numero.innerText = start;\n        if (start >= total) {\n          numero.innerText = total;\n          clearInterval(timer);\n        }\n      }, 45 * Math.random());\n    });\n  }\n  function handleMutation(mutation) {\n    if (mutation[0].target.classList.contains(\"active\")) {\n      observer.disconnect();\n      animateNumbers();\n    }\n  }\n  var observeTarget = document.querySelector(\".numeros\");\n  var observer = new MutationObserver(handleMutation);\n  observer.observe(observeTarget, {\n    attributes: true\n  });\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-number-animation.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-operation.js":
+/*!***************************************!*\
+  !*** ./src/modules/init-operation.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initOperation)\n/* harmony export */ });\nfunction initOperation() {\n  var operation = document.querySelector(\"[data-semana]\");\n  var weekdays = operation.dataset.semana.split(\",\").map(Number);\n  var weekhour = operation.dataset.horario.split(\",\").map(Number);\n  var now = new Date();\n  var today = now.getDay();\n  var atm = now.getHours();\n  var openWeekday = weekdays.indexOf(today) !== -1;\n  var openingHours = today >= weekhour[0] || today < weekhour[1];\n  if (openWeekday && openingHours) operation.classList.add(\"openned\");\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-operation.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-outside-click.js":
+/*!*******************************************!*\
+  !*** ./src/modules/init-outside-click.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initOutsideClick)\n/* harmony export */ });\nfunction initOutsideClick(element, events, callback) {\n  var html = document.documentElement;\n  var outside = \"data-outside\";\n  if (!element.hasAttribute(outside)) {\n    events.forEach(function (userEvent) {\n      setTimeout(function () {\n        return html.addEventListener(userEvent, handleOutsideClick);\n      });\n      element.setAttribute(outside, \"\");\n      function handleOutsideClick(event) {\n        if (!element.contains(event.target)) {\n          element.removeAttribute(outside);\n          events.forEach(function (userEvent) {\n            html.removeEventListener(userEvent, handleOutsideClick);\n          });\n          callback();\n        }\n      }\n    });\n  }\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-outside-click.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-smooth-scroll.js":
+/*!*******************************************!*\
+  !*** ./src/modules/init-smooth-scroll.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ SmoothScroll)\n/* harmony export */ });\n/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ \"./node_modules/@babel/runtime/helpers/esm/classCallCheck.js\");\n/* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ \"./node_modules/@babel/runtime/helpers/esm/createClass.js\");\n\n\nvar SmoothScroll = /*#__PURE__*/function () {\n  function SmoothScroll(links, options) {\n    (0,_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(this, SmoothScroll);\n    this.linksInternos = document.querySelectorAll(links);\n    if (options === undefined) {\n      this.options = {\n        behavior: \"smooth\",\n        block: \"start\"\n      };\n    } else {\n      this.options = options;\n    }\n    this.scrollToSection = this.scrollToSection.bind(this);\n  }\n  return (0,_babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(SmoothScroll, [{\n    key: \"scrollToSection\",\n    value: function scrollToSection(event) {\n      event.preventDefault();\n      var href = event.currentTarget.getAttribute(\"href\");\n      var section = document.querySelector(href);\n      section.scrollIntoView(this.options);\n    }\n  }, {\n    key: \"addLinkEvent\",\n    value: function addLinkEvent() {\n      var _this = this;\n      this.linksInternos.forEach(function (link) {\n        link.addEventListener(\"click\", _this.scrollToSection);\n      });\n    }\n  }, {\n    key: \"init\",\n    value: function init() {\n      if (this.linksInternos.length) {\n        this.addLinkEvent();\n      }\n      return this;\n    }\n  }]);\n}();\n\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-smooth-scroll.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-tab-navigation.js":
+/*!********************************************!*\
+  !*** ./src/modules/init-tab-navigation.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initTabNav)\n/* harmony export */ });\nfunction initTabNav() {\n  var tabMenu = document.querySelectorAll(\"[data-tab='menu'] li\");\n  var tabContent = document.querySelectorAll(\"[data-tab='content'] section\");\n  var tabClassToInit = \"active\";\n  if (tabMenu.length && tabContent.length) {\n    tabContent[0].classList.add(tabClassToInit);\n    var activeTabs = function activeTabs(index, value) {\n      tabContent.forEach(function (item) {\n        return item.classList.remove(value);\n      });\n      var direction = tabContent[index].dataset.anime;\n      console.log(direction);\n      tabContent[index].classList.add(value, direction);\n    };\n    tabMenu.forEach(function (item, index) {\n      item.addEventListener(\"click\", function () {\n        return activeTabs(index, tabClassToInit);\n      });\n    });\n  }\n}\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-tab-navigation.js?");
+
+/***/ }),
+
+/***/ "./src/modules/init-tooltip-handler.js":
+/*!*********************************************!*\
+  !*** ./src/modules/init-tooltip-handler.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ initTooltip)\n/* harmony export */ });\nfunction initTooltip() {}\nvar tooltips = document.querySelectorAll(\"[data-tooltip]\");\nvar createTooltipBox = function createTooltipBox(element) {\n  var tooltipBox = document.createElement(\"div\");\n  var text = element.getAttribute(\"aria-label\");\n  tooltipBox.classList.add(\"tooltip\");\n  tooltipBox.insertAdjacentText(\"afterbegin\", text);\n  return document.body.appendChild(tooltipBox);\n};\nfunction onMouseOver(event) {\n  var tooltipBox = createTooltipBox(this);\n  tooltipBox.style.top = \"calc(\".concat(event.pageY, \"px - 4%)\");\n  tooltipBox.style.left = \"calc(\".concat(event.pageX, \"px + 1%)\");\n  onMouseLeave.tooltip = tooltipBox;\n  onMouseMove.tooltip = tooltipBox;\n  onMouseLeave.element = this;\n  this.addEventListener(\"mouseleave\", onMouseLeave);\n  this.addEventListener(\"mousemove\", onMouseMove);\n}\nvar onMouseLeave = {\n  handleEvent: function handleEvent() {\n    this.tooltip.remove();\n    this.removeEventListener(\"mouseleave\", onMouseLeave);\n  }\n};\nvar onMouseMove = {\n  handleEvent: function handleEvent(event) {\n    this.tooltip.style.top = \"calc(\".concat(event.pageY, \"px - 4%)\");\n    this.tooltip.style.left = \"calc(\".concat(event.pageX, \"px + 1%)\");\n  }\n};\ntooltips.forEach(function (tip) {\n  tip.addEventListener(\"mouseover\", onMouseOver);\n});\n\n//# sourceURL=webpack://8.2-eslint-animais-fantasticos/./src/modules/init-tooltip-handler.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
