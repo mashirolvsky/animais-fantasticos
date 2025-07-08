@@ -1,6 +1,6 @@
 import TabNav from "./modules/tab-navigation.js";
 import SmoothScroll from "./modules/smooth-scroll.js";
-import initAnimateScroll from "./modules/init-animate-scroll.js";
+import AnimateScroll from "./modules/animate-scroll.js";
 import Accordion from "./modules/accordion.js";
 import Modal from "./modules/modal-handler.js";
 import Tooltip from "./modules/tooltip-handler.js";
@@ -23,7 +23,8 @@ const modal = new Modal(
 );
 const tooltip = new Tooltip("[data-tooltip]");
 
-initAnimateScroll();
+const animateScroll = new AnimateScroll("[data-anime='scroll']", "active");
+
 initDropdownMenu();
 initMenuMobile();
 initOperation();
@@ -33,6 +34,7 @@ accordion.init();
 tabNav.init();
 modal.init();
 tooltip.init();
+animateScroll.init();
 
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 fetchAnimais("../animaisapi.json", ".numeros-grid");
