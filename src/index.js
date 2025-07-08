@@ -39,8 +39,6 @@ const menuMobile = new MenuMobile(
 );
 
 const operation = new Operation("[data-semana]", "active");
-console.log(operation);
-console.log(operation.operation);
 
 operation.init();
 smoothScroll.init();
