@@ -8,6 +8,6 @@
   border: 0.125rem solid #0000003d;
 }
 
-[data-semana].openned::after {
+[data-semana].active::after {
   background: #3f4;
 }

@@ -6,7 +6,7 @@ import Modal from "./modules/modal-handler.js";
 import Tooltip from "./modules/tooltip-handler.js";
 import DropdownMenu from "./modules/dropdown-menu-handler.js";
 import MenuMobile from "./modules/menu-mobile.js";
-import initOperation from "./modules/init-operation.js";
+import Operation from "./modules/operation.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 
@@ -38,8 +38,11 @@ const menuMobile = new MenuMobile(
   "active"
 );
 
-initOperation();
+const operation = new Operation("[data-semana]", "active");
+console.log(operation);
+console.log(operation.operation);
 
+operation.init();
 smoothScroll.init();
 accordion.init();
 tabNav.init();
