@@ -1,4 +1,4 @@
-import initNumberAnimation from "./init-number-animation.js";
+import NumberAnimation from "./number-animation.js";
 
 export default function initFetchAnimais() {
   return fetchAnimais("./animaisapi.json");
@@ -13,7 +13,13 @@ async function fetchAnimais(url) {
       const divAnimal = createAnimal(element);
       containerNumber.appendChild(divAnimal);
     });
-    initNumberAnimation();
+    const animateNumber = new NumberAnimation(
+      "[data-numero]",
+      ".numeros",
+      "active"
+    );
+
+    animateNumber.init();
   } catch (error) {
     console.log(error);
   }
