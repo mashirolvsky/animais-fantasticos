@@ -7,7 +7,7 @@ import Tooltip from "./modules/tooltip-handler.js";
 import initDropdownMenu from "./modules/init-dropdown-menu-handler.js";
 import initMenuMobile from "./modules/init-menu-mobile.js";
 import initOperation from "./modules/init-operation.js";
-import initFetchAnimais from "./modules/init-fetch-animais.js";
+import fetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/init-fetch-bitcoin.js";
 
 const tabNav = new TabNav(
@@ -27,7 +27,6 @@ initAnimateScroll();
 initDropdownMenu();
 initMenuMobile();
 initOperation();
-initFetchAnimais();
 initFetchBitcoin();
 
 smoothScroll.init();
@@ -35,3 +34,5 @@ accordion.init();
 tabNav.init();
 modal.init();
 tooltip.init();
+
+fetchAnimais("../animaisapi.json", ".numeros-grid");
