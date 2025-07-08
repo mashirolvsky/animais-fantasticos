@@ -18,12 +18,12 @@ export default class DropdownMenu {
     });
   }
 
-  activeDropdownMenu(event) {
-    event.preventDefault();
-    const element = event.currentTarget;
-    element.classList.add(this.className);
-    initOutsideClick(element, this.userEvent, () => {
-      element.classList.remove(this.className);
+  activeDropdownMenu({ currentTarget, preventDefault }) {
+    preventDefault();
+    console.log(currentTarget);
+    currentTarget.classList.add(this.className);
+    initOutsideClick(currentTarget, this.userEvent, () => {
+      currentTarget.classList.remove(this.className);
     });
   }
 
