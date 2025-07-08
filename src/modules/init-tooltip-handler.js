@@ -1,4 +1,4 @@
-export default function initTooltip() {}
+export default function initTooltip() { }
 const tooltips = document.querySelectorAll("[data-tooltip]");
 const createTooltipBox = element => {
   const tooltipBox = document.createElement("div");
