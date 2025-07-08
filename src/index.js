@@ -27,7 +27,7 @@ const animateScroll = new AnimateScroll("[data-anime='scroll']", "active");
 
 const dropdownMenu = new DropdownMenu(
   "[data-dropdown]",
-  ["touchstart", "click"],
+  ["click", "touchstart"],
   "active"
 );
 
