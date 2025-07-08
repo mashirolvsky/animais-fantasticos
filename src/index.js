@@ -3,7 +3,7 @@ import SmoothScroll from "./modules/init-smooth-scroll.js";
 import initAnimateScroll from "./modules/init-animate-scroll.js";
 import Accordion from "./modules/init-accordion.js";
 import Modal from "./modules/modal-handler.js";
-import initTooltip from "./modules/init-tooltip-handler.js";
+import Tooltip from "./modules/tooltip-handler.js";
 import initDropdownMenu from "./modules/init-dropdown-menu-handler.js";
 import initMenuMobile from "./modules/init-menu-mobile.js";
 import initOperation from "./modules/init-operation.js";
@@ -16,7 +16,7 @@ const accordion = new Accordion("[data-anime='accordion'] dt");
 const modal = new Modal("[data-modal='open']", "[data-modal='container']", "[data-modal='close']");
 
 initAnimateScroll();
-initTooltip();
+const tooltip = new Tooltip("[data-tooltip]");
 initDropdownMenu();
 initMenuMobile();
 initOperation();
@@ -27,3 +27,4 @@ smoothScroll.init();
 accordion.init();
 tabNav.init();
 modal.init()
+tooltip.init();
