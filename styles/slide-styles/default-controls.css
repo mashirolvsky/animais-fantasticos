@@ -1,0 +1,23 @@
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 32px;
+  height: 8px;
+  background: #fb5;
+  border-radius: 8px;
+  overflow: clip;
+  transition: scale 352ms var(--gentle-transition);
+}
+
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  background: #e54;
+}

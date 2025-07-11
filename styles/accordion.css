@@ -1,0 +1,36 @@
+@import "root.css";
+
+.js [data-anime="accordion"] dt {
+  cursor: var(--custom-pointer) 10 10, auto;
+}
+
+.js [data-anime="accordion"] dd {
+  display: none;
+  cursor: var(--custom-cursor) 10 10, auto;
+}
+
+[data-anime="accordion"] dt::after {
+  content: "⤵";
+  margin-left: 0.5rem;
+}
+[data-anime="accordion"] dt.active::after {
+  content: "⤴";
+  margin-left: 0.5rem;
+}
+
+[data-anime="accordion"] dd.active {
+  display: flex;
+  max-width: 80%;
+  animation: active 0.32s var(--gentle-transition) normal;
+}
+
+@keyframes active {
+  from {
+    opacity: 0;
+    max-height: 0rem;
+  }
+  to {
+    max-height: 8rem;
+    opacity: 1;
+  }
+}
