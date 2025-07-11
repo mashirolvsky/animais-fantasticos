@@ -5,7 +5,13 @@
 @import "numeros.css";
 @import "menu-mobile.css";
 @import "operation.css";
+@import "accordion.css";
 @import "bitcoin-preco.css";
+@import "./slide-styles/custom-controls.css";
+@import "./slide-styles/button-controls.css";
+@import "./slide-styles/slide.css";
+@import "./slide-styles/default-controls.css";
+@import "root.css";
 
 /* Fontes importadas */
 @import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap);

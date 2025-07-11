@@ -9,6 +9,7 @@ import MenuMobile from "./modules/menu-mobile.js";
 import Operation from "./modules/operation.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
+import { SlideNav } from "./modules/slide.js";
 
 const tabNav = new TabNav(
   "[data-tab='menu'] li",
@@ -40,6 +41,8 @@ const menuMobile = new MenuMobile(
 
 const operation = new Operation("[data-semana]", "active");
 
+const slide = new SlideNav(".slide", ".slide-wrapper", "active");
+
 operation.init();
 smoothScroll.init();
 accordion.init();
@@ -49,6 +52,10 @@ tooltip.init();
 animateScroll.init();
 dropdownMenu.init();
 menuMobile.init();
+slide.init();
+
+slide.addArrow(".prev", ".next");
+slide.addControl(".custom-controls");
 
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 fetchAnimais("./animaisapi.json", ".numeros-grid");

@@ -15,7 +15,7 @@
     font-family: "IBM Plex Mono", monospace;
     font-weight: bold;
     color: #fff;
-    cursor: pointer;
+    cursor: var(--custom-pointer) 10 10, auto;
     margin: 10px;
     z-index: 16;
     position: relative;
@@ -27,7 +27,7 @@
     width: 0.725rem;
     background: #fff;
     box-shadow: 0 4px #fff, 0 -4px #fff;
-    transition: transform 0.62s cubic-bezier(0.2, 0, 0, 1);
+    transition: transform 352ms var(--gentle-transition);
   }
   .js [data-menu="button"].active::before {
     transform: rotate(90deg);
@@ -43,7 +43,7 @@
   }
   .js [data-menu="list"].active {
     display: block;
-    animation: show-down 0.62s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    animation: show-down 620ms var(--gentle-transition) forwards;
   }
   .js .dropdown-menu {
     position: static;

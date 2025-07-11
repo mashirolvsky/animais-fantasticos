@@ -1,3 +1,5 @@
+@import "root.css";
+
 body,
 h1,
 h2,
@@ -10,6 +12,7 @@ dl {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  cursor: var(--custom-cursor) 10 10, auto;
 }
 img {
   display: block;
@@ -53,6 +56,7 @@ body {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 0.08em;
+  cursor: var(--custom-pointer) 10 10, auto;
 }
 
 .grid-section {
@@ -128,7 +132,7 @@ body {
 }
 
 .faq-lista {
-  grid-column: 2/4;
+  grid-column: 2/5;
 }
 
 .faq-lista dt {
@@ -183,7 +187,7 @@ body {
 }
 
 .copy {
-  grid-column: 3/5;
+  grid-column: 2/5;
   margin-bottom: 2rem;
   background: #fb5;
 }
@@ -196,7 +200,7 @@ body {
 
 @media (max-width: 700px) {
   body {
-    grid-template-columns: 1fr;
+    display: flex;
   }
   .menu,
   .grid-section,
@@ -236,10 +240,10 @@ body {
   display: block !important;
 }
 [data-tab="content"] section.active.show-right {
-  animation: show-right 0.32s cubic-bezier(0.7, 0, 0, 1) forwards;
+  animation: show-right 0.32s var(--gentle-transition) forwards;
 }
 [data-tab="content"] section.active.show-down {
-  animation: show-down 0.32s cubic-bezier(0.7, 0, 0, 1) forwards;
+  animation: show-down 0.32s var(--gentle-transition) forwards;
 }
 
 @keyframes show-right {
@@ -263,40 +267,11 @@ body {
   }
 }
 
-.js [data-anime="accordion"] dd {
-  display: none;
-}
-
-[data-anime="accordion"] dt::after {
-  content: "⤵";
-  margin-left: 0.5rem;
-}
-[data-anime="accordion"] dt.active::after {
-  content: "⤴";
-  margin-left: 0.5rem;
-}
-
-[data-anime="accordion"] dd.active {
-  display: block !important;
-  animation: active 0.32s cubic-bezier(0.7, 0, 0, 1) normal;
-}
-
-@keyframes active {
-  from {
-    opacity: 0;
-    max-height: 0rem;
-  }
-  to {
-    max-height: 8rem;
-    opacity: 1;
-  }
-}
-
 .js [data-anime="scroll"] {
   opacity: 0;
 }
 
 .js [data-anime="scroll"].active {
   opacity: 1;
-  transition: 0.3s cubic-bezier(0.2, 0, 0, 1);
+  transition: 0.3s var(--gentle-transition);
 }

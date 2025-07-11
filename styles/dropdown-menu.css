@@ -7,7 +7,7 @@
 [data-dropdown]:hover .dropdown-menu,
 [data-dropdown].active .dropdown-menu {
   display: block;
-  animation: show-up 0.32s cubic-bezier(0.2, 0, 0, 1) forwards;
+  animation: show-up 0.32s var(--gentle-transition) forwards;
 }
 @keyframes show-up {
   from {
@@ -44,5 +44,5 @@
 .dropdown-menu a:hover {
   color: #fb5 !important;
   transform: scale(0.97);
-  transition: 0.32s cubic-bezier(0.2, 0, 0, 1);
+  transition: 0.32s var(--gentle-transition);
 }
