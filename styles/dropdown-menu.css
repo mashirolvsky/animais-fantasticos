@@ -1,3 +1,5 @@
+@import "root.css";
+
 [data-dropdown] {
   position: relative;
 }
@@ -45,4 +47,11 @@
   color: #fb5 !important;
   transform: scale(0.97);
   transition: 0.32s var(--gentle-transition);
+}
+
+@media (max-width: 700) {
+  [dropdown-menu] .dropdown-menu {
+    display: block;
+    animation: show-up 352ms var(--gentle-transition) forwards;
+  }
 }
